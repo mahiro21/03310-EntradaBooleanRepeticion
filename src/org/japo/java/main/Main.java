@@ -31,25 +31,21 @@ public class Main {
     public static void main(String[] args) {
 
         //variables & Constantes
-        final int MAX = 4;
-        final int MIN = 0;
         boolean error;
-        double numero;
+        boolean condicion;
 
-        //Estado inicial
-        numero = MIN;
-
+        
         //Inicio bucle
         do {
             try {
-                System.out.print("Insert double valor ");
-                numero = SCN.nextDouble();
-                System.out.printf(Locale.ENGLISH, "%.2f%n", numero);
+                System.out.print("Insert boolean valor...:  ");
+                condicion = SCN.nextBoolean();
+                System.out.printf("%b%n", condicion);
                 SCN.nextLine();
                 error = false;
             } catch (Exception e) {
                 error = true;
-                System.out.println("Not double valor");
+                System.out.println("Not boolean valor");
                 SCN.nextLine();
 
             }
